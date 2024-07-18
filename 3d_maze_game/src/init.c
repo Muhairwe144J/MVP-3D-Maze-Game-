@@ -39,9 +39,9 @@ bool initSDL(Game *game) {
 
 // Function to load textures
 bool loadTextures(Game *game) {
-    game->textures[0] = loadTexture(game, "assets/textures/wall.bmp");
-    game->textures[1] = loadTexture(game, "assets/textures/ground.bmp");
-    game->textures[2] = loadTexture(game, "assets/textures/ceiling.bmp");
+    game->textures[0] = loadTexture(game, "assets/textures/wall.png");
+    game->textures[1] = loadTexture(game, "assets/textures/ground.png");
+    game->textures[2] = loadTexture(game, "assets/textures/ceiling.png");
 
     for (int i = 0; i < 3; ++i) {
         if (game->textures[i] == NULL) {
